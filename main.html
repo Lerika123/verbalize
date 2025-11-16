@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - Название сайта</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Название сайта</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Добро пожаловать на наш сайт</h1>
+            <p class="hero-description">
+                Мы создаем инновационные решения для вашего бизнеса.
+                Наша команда профессионалов готова помочь вам достичь
+                новых высот в цифровом пространстве.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Начать работу</button>
+                <button class="btn btn-secondary">Узнать больше</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О нашей компании</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Мы - современная IT-компания, специализирующаяся на разработке
+                        веб-приложений и цифровых решений. Наш опыт позволяет создавать
+                        продукты, которые действительно работают на ваш бизнес.
+                    </p>
+                    <ul class="features-list">
+                        <li>✅ Более 5 лет на рынке</li>
+                        <li>✅ 100+ успешных проектов</li>
+                        <li>✅ Профессиональная команда</li>
+                        <li>✅ Современные технологии</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <!-- Здесь может быть изображение -->
+                    <div class="image-placeholder">
+                        <span>Изображение компании</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Веб-разработка</h3>
+                    <p>Создаем современные и функциональные веб-сайты</p>
+                </div>
+                <div class="service-card">
+                    <h3>Дизайн</h3>
+                    <p>Разрабатываем удобные и привлекательные интерфейсы</p>
+                </div>
+                <div class="service-card">
+                    <h3>Консультации</h3>
+                    <p>Помогаем выбрать оптимальные технологические решения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Название сайта. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
